@@ -12,7 +12,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "NODE_ENV=production babel src --out-dir dist --source-maps inline",
-    "prepublishOnly": "npm run buld"
+    "prepublishOnly": "npm run build"
   },
   "author": "",
   "license": "ISC",
@@ -21,5 +21,8 @@
     "@babel/core": "^7.5.5",
     "@babel/node": "^7.5.5",
     "@babel/preset-env": "^7.5.5"
+  },
+  "dependencies": {
+    "readline-sync": "^1.4.10"
   }
 }
