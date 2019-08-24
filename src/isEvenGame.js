@@ -8,7 +8,7 @@ export const isEvenGame = () => {
   const isEvenQuestion = (num) => {
     console.log(`\nQuestion: ${num}`);
     const answer = readlineSync.question('Your answer: ');
-    if ((isEven(num) === 'yes' && answer === 'yes') || (isEven(num) === 'no' && answer === 'no')) {
+    if (isEven(num) === answer) {
       console.log('Correct!');
       scoreCount += 1;
     } else {
