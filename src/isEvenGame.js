@@ -1,14 +1,14 @@
 import readlineSync from 'readline-sync';
 
 export const rules = 'Answer "yes" if the number is even, otherwise answer "no".';
-const isEven = (num) => (num % 2 === 0 ? true : false);
+const isEven = (num) => (num % 2 === 0 ? 'yes' : 'no');
 
 export const isEvenGame = () => {
   let scoreCount = 0;
   const isEvenQuestion = (num) => {
     console.log(`\nQuestion: ${num}`);
     const answer = readlineSync.question('Your answer: ');
-    if ((isEven(num) === true && answer === 'yes') || (isEven(num) === false && answer === 'no')) {
+    if ((isEven(num) === 'yes' && answer === 'yes') || (isEven(num) === 'no' && answer === 'no')) {
       console.log('Correct!');
       scoreCount += 1;
     } else {
