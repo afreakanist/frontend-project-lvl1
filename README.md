@@ -5,3 +5,5 @@
 [![Build Status](https://travis-ci.org/afreakanist/frontend-project-lvl1.svg?branch=master)](https://travis-ci.org/afreakanist/frontend-project-lvl1)
 
 [![asciicast](https://asciinema.org/a/BkIoiIutMaHcCVx3lnByKmf00.svg)](https://asciinema.org/a/BkIoiIutMaHcCVx3lnByKmf00)
+
+[![asciicast](https://asciinema.org/a/RwyhHxWTWI0AT2EwNqoPOE0GW.svg)](https://asciinema.org/a/RwyhHxWTWI0AT2EwNqoPOE0GW)
