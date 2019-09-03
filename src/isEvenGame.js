@@ -11,7 +11,7 @@ const isEvenRound = (num) => {
     console.log('Correct!');
     scoreCount += 1;
   } else {
-    console.log('Oops, it is the wrong answer :( The correct one is "no".\nLet\'s try again!');
+    console.log(`Oops, it is the wrong answer :( The correct one is "${isEven(num)}".\nLet's try again!`);
   }
   return scoreCount;
 };
