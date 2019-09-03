@@ -22,6 +22,6 @@ export const isEvenGame = () => {
   isEvenRound(7);
 
   if (scoreCount === 3) {
-    console.log('\nCongradulations!');
+    console.log('\nCongratulations!');
   }
 };

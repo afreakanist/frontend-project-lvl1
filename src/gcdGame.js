@@ -35,6 +35,6 @@ export const gcdGame = () => {
   gcdRound(getRandomInt(0, 100), getRandomInt(0, 100));
 
   if (scoreCount === 3) {
-    console.log('\nCongradulations!');
+    console.log('\nCongratulations!');
   }
 };
