@@ -1,16 +1,11 @@
 import readlineSync from 'readline-sync';
+import generateRandomNumber from '../generateRandomNumber';
 
-export const rules = 'What number is missing in the sequence?';
-
-const getRandomInt = (min, max) => {
-  const minimum = Math.ceil(min);
-  const maximum = Math.floor(max);
-  return Math.floor(Math.random() * (maximum - minimum + 1)) + minimum;
-};
+export const gameDescription = 'What number is missing in the sequence?';
 
 const generateSequence = () => {
   let sequence = '';
-  let currentNumber = getRandomInt(0, 100);
+  let currentNumber = generateRandomNumber(0, 100);
   let counter = 1;
   while (counter <= 10) {
     sequence = `${sequence}${currentNumber} `;
@@ -26,7 +21,7 @@ const progressionRound = (sequence) => {
     const result = sequence.split(' ', 10);
     return result;
   };
-  const hiddenNumberPosition = getRandomInt(0, 9);
+  const hiddenNumberPosition = generateRandomNumber(0, splitSequence().length - 1);
   const hiddenNumber = splitSequence()[hiddenNumberPosition];
   const sequenceModified = sequence.replace(splitSequence()[hiddenNumberPosition], '..');
   console.log(`\nQuestion: ${sequenceModified}`);

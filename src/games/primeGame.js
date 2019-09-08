@@ -1,11 +1,7 @@
 import readlineSync from 'readline-sync';
+import generateRandomNumber from '../generateRandomNumber';
 
-export const rules = 'Answer "yes" if the number is prime, otherwise answer "no".';
-const getRandomInt = (min, max) => {
-  const minimum = Math.ceil(min);
-  const maximum = Math.floor(max);
-  return Math.floor(Math.random() * (maximum - minimum + 1)) + minimum;
-};
+export const gameDescription = 'Answer "yes" if the number is prime, otherwise answer "no".';
 
 const isPrime = (num) => {
   let result;
@@ -36,9 +32,9 @@ const primeRound = (num) => {
 };
 
 export const primeGame = () => {
-  primeRound(getRandomInt(0, 100));
-  primeRound(getRandomInt(0, 100));
-  primeRound(getRandomInt(0, 100));
+  primeRound(generateRandomNumber(0, 100));
+  primeRound(generateRandomNumber(0, 100));
+  primeRound(generateRandomNumber(0, 100));
 
   if (scoreCount === 3) {
     console.log('\nCongratulations!');

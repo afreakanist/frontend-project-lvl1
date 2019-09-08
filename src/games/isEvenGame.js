@@ -1,6 +1,6 @@
 import readlineSync from 'readline-sync';
 
-export const rules = 'Answer "yes" if the number is even, otherwise answer "no".';
+export const gameDescription = 'Answer "yes" if the number is even, otherwise answer "no".';
 const isEven = (num) => (num % 2 === 0 ? 'yes' : 'no');
 
 let scoreCount = 0;

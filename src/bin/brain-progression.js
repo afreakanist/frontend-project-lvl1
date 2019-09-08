@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 import { greeting, userName } from '..';
-import { rules, progressionGame } from '../progressionGame';
+import { gameDescription, progressionGame } from '../games/progressionGame';
 
 console.log(greeting);
-console.log(rules);
+console.log(gameDescription);
 userName();
 progressionGame();

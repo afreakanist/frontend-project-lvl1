@@ -1,6 +1,4 @@
-[![Maintainability](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability)](https://codeclimate.com/github/codeclimate/codeclimate/maintainability)
-
-[![Test Coverage](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/test_coverage)](https://codeclimate.com/github/codeclimate/codeclimate/test_coverage)
+[![Maintainability](https://api.codeclimate.com/v1/badges/b9b0d5549f899746187a/maintainability)](https://codeclimate.com/github/afreakanist/frontend-project-lvl1/maintainability)
 
 [![Build Status](https://travis-ci.org/afreakanist/frontend-project-lvl1.svg?branch=master)](https://travis-ci.org/afreakanist/frontend-project-lvl1)
 

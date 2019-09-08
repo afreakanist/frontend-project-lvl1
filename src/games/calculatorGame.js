@@ -1,17 +1,12 @@
 import readlineSync from 'readline-sync';
+import generateRandomNumber from '../generateRandomNumber';
 
-export const rules = 'What is the result of the expression?';
-
-const getRandomInt = (min, max) => {
-  const minimum = Math.ceil(min);
-  const maximum = Math.floor(max);
-  return Math.floor(Math.random() * (maximum - minimum + 1)) + minimum;
-};
+export const gameDescription = 'What is the result of the expression?';
 
 let scoreCount = 0;
 const calcRound = (num1, operator, num2) => {
   console.log(`\nQuestion: ${num1} ${operator} ${num2}`);
-  const givenAnswer = readlineSync.question('Your answer: ');
+  const givenAnswer = readlineSync.question('Your answer: '); // тут не глагол, а причастие (по смыслу "ответ, который дал юзер")
   let expectedAnswer;
   if (operator === '+') {
     expectedAnswer = num1 + num2;
@@ -33,9 +28,9 @@ const calcRound = (num1, operator, num2) => {
 };
 
 export const calculatorGame = () => {
-  calcRound(getRandomInt(0, 100), '+', getRandomInt(0, 100));
-  calcRound(getRandomInt(0, 100), '-', getRandomInt(0, 100));
-  calcRound(getRandomInt(0, 100), '*', getRandomInt(0, 100));
+  calcRound(generateRandomNumber(0, 100), '+', generateRandomNumber(0, 100));
+  calcRound(generateRandomNumber(0, 100), '-', generateRandomNumber(0, 100));
+  calcRound(generateRandomNumber(0, 100), '*', generateRandomNumber(0, 100));
 
   if (scoreCount === 3) {
     console.log('\nCongratulations!');
