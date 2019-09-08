@@ -8,14 +8,16 @@ const calcRound = (num1, operator, num2) => {
   console.log(`\nQuestion: ${num1} ${operator} ${num2}`);
   const givenAnswer = readlineSync.question('Your answer: '); // тут не глагол, а причастие (по смыслу "ответ, который дал юзер")
   let expectedAnswer;
-  if (operator === '+') {
-    expectedAnswer = num1 + num2;
-  }
-  if (operator === '-') {
-    expectedAnswer = num1 - num2;
-  }
-  if (operator === '*') {
-    expectedAnswer = num1 * num2;
+  switch (operator) {
+    case '+':
+      expectedAnswer = num1 + num2;
+      break;
+    case '-':
+      expectedAnswer = num1 - num2;
+      break;
+    default:
+      expectedAnswer = num1 * num2;
+      break;
   }
 
   if (expectedAnswer === Number(givenAnswer)) {
