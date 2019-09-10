@@ -1,17 +1,27 @@
 import readlineSync from 'readline-sync';
 
 export const gameDescription = 'Answer "yes" if the number is even, otherwise answer "no".';
-const isEven = (num) => (num % 2 === 0 ? 'yes' : 'no');
+const isEven = (num) => num % 2 === 0;
 
 let scoreCount = 0;
 const isEvenRound = (num) => {
   console.log(`\nQuestion: ${num}`);
   const givenAnswer = readlineSync.question('Your answer: ');
-  if (isEven(num) === givenAnswer) {
+  let expectedAnswer;
+  switch (isEven(num)) {
+    case true:
+      expectedAnswer = 'yes';
+      break;
+    default:
+      expectedAnswer = 'no';
+      break;
+  }
+
+  if (expectedAnswer === givenAnswer) {
     console.log('Correct!');
     scoreCount += 1;
   } else {
-    console.log(`Oops, it is the wrong answer :( The correct one is "${isEven(num)}".\nLet's try again!`);
+    console.log(`Oops, it is the wrong answer :( The correct one is "${expectedAnswer}".\nLet's try again!`);
   }
   return scoreCount;
 };
