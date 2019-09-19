@@ -1,8 +1,5 @@
 #!/usr/bin/env node
-import { greeting, userName } from '..';
-import { gameDescription, primeGame } from '../games/primeGame';
+import gameRun from '..';
+import '../games/primeGame';
 
-console.log(greeting);
-console.log(gameDescription);
-userName();
-primeGame();
+gameRun();

@@ -7,7 +7,8 @@ const generateSequence = () => {
   let sequence = '';
   let currentNumber = generateRandomNumber(0, 100);
   let counter = 1;
-  while (counter <= 10) {
+  const numberOfTerms = 10;
+  while (counter <= numberOfTerms) {
     sequence = `${sequence}${currentNumber} `;
     currentNumber += 2;
     counter += 1;

@@ -1,5 +1,4 @@
 #!/usr/bin/env node
-import { greeting, userName } from '..';
+import gameRun from '..';
 
-console.log(greeting);
-userName();
+gameRun();

@@ -1,5 +1,4 @@
 # My fisrt frontend project (lvl 1)
----
 
 Hello, stranger!
 This is my first project ever. It's a pack of little math games I encourage you to play!
@@ -9,7 +8,6 @@ This is my first project ever. It's a pack of little math games I encourage you 
 [![Build Status](https://travis-ci.org/afreakanist/frontend-project-lvl1.svg?branch=master)](https://travis-ci.org/afreakanist/frontend-project-lvl1)
 
 ## Installation
----
 
 Here are some videos illustrating how to install the package and run the games:
 
@@ -35,7 +33,6 @@ You shall see the following files and directories:
     README.md			this file
 
 ## Additional information
----
 
 Please notice that this is a student project. 
 My name is Anna Korotkikh and I did this project under the supervision of the Hexlet Team. 

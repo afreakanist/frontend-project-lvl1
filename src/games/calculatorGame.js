@@ -6,7 +6,7 @@ export const gameDescription = 'What is the result of the expression?';
 let scoreCount = 0;
 const calcRound = (num1, operator, num2) => {
   console.log(`\nQuestion: ${num1} ${operator} ${num2}`);
-  const givenAnswer = readlineSync.question('Your answer: '); // тут не глагол, а причастие (по смыслу "ответ, который дал юзер")
+  const givenAnswer = readlineSync.question('Your answer: ');
   let expectedAnswer;
   switch (operator) {
     case '+':

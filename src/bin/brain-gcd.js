@@ -1,8 +1,5 @@
 #!/usr/bin/env node
-import { greeting, userName } from '..';
-import { gameDescription, gcdGame } from '../games/gcdGame';
+import gameRun from '..';
+import '../games/gcdGame';
 
-console.log(greeting);
-console.log(gameDescription);
-userName();
-gcdGame();
+gameRun();
