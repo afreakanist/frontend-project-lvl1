@@ -1,7 +1,8 @@
-import readlineSync from 'readline-sync';
 import generateRandomNumber from '../generateRandomNumber';
+import makePair from '../pairs';
+import engine from '..';
 
-export const gameDescription = 'What number is missing in the sequence?';
+export const gameDescriptionGcd = 'What number is missing in the sequence?';
 
 const generateSequence = () => {
   let sequence = '';
@@ -9,40 +10,27 @@ const generateSequence = () => {
   let counter = 1;
   const numberOfTerms = 10;
   while (counter <= numberOfTerms) {
+    const d = 2;
     sequence = `${sequence}${currentNumber} `;
-    currentNumber += 2;
+    currentNumber += d;
     counter += 1;
   }
   return sequence;
 };
 
-let scoreCount = 0;
-const progressionRound = (sequence) => {
-  const splitSequence = () => {
-    const result = sequence.split(' ', 10);
-    return result;
-  };
+const makeProgPair = () => {
+  const sequence = generateSequence();
+  const numberOfTerms = 10;
+  const splitSequence = () => sequence.split(' ', numberOfTerms);
   const hiddenNumberPosition = generateRandomNumber(0, splitSequence().length - 1);
   const hiddenNumber = splitSequence()[hiddenNumberPosition];
   const sequenceModified = sequence.replace(splitSequence()[hiddenNumberPosition], '..');
-  console.log(`\nQuestion: ${sequenceModified}`);
-  const givenAnswer = readlineSync.question('Your answer: ');
-  const expectedAnswer = Number(hiddenNumber);
-  if (expectedAnswer === Number(givenAnswer)) {
-    console.log('Correct!');
-    scoreCount += 1;
-  } else {
-    console.log(`Oops, ${givenAnswer} is the wrong answer :( The correct one is ${expectedAnswer}.\nLet's try again!`);
-  }
-  return scoreCount;
+
+  const q = `${sequenceModified}`;
+  const a = hiddenNumber;
+  return makePair(q, a);
 };
 
-export const progressionGame = () => {
-  progressionRound(generateSequence());
-  progressionRound(generateSequence());
-  progressionRound(generateSequence());
-
-  if (scoreCount === 3) {
-    console.log('\nCongratulations!');
-  }
+export default () => {
+  engine(gameDescriptionGcd, makeProgPair);
 };

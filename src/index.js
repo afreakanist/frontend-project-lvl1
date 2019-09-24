@@ -22,7 +22,8 @@ export default (gameDescription, pair) => {
 
   const roundAmount = 3;
   for (let i = 1; i <= roundAmount; i += 1) {
-    playRound(car(pair), cdr(pair));
+    const qa = pair();
+    playRound(car(qa), cdr(qa));
   }
 
   if (scoreCount === roundAmount) {

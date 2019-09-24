@@ -1,40 +1,39 @@
-import readlineSync from 'readline-sync';
 import generateRandomNumber from '../generateRandomNumber';
+import makePair from '../pairs';
+import engine from '..';
 
-export const gameDescription = 'What is the result of the expression?';
+const gameDescriptionCalc = 'What is the result of the expression?';
 
-let scoreCount = 0;
-const calcRound = (num1, operator, num2) => {
-  console.log(`\nQuestion: ${num1} ${operator} ${num2}`);
-  const givenAnswer = readlineSync.question('Your answer: ');
-  let expectedAnswer;
-  switch (operator) {
-    case '+':
-      expectedAnswer = num1 + num2;
-      break;
-    case '-':
-      expectedAnswer = num1 - num2;
-      break;
-    default:
-      expectedAnswer = num1 * num2;
-      break;
+const getOperator = (n) => {
+  let result = '';
+  const characters = '+-*';
+  const charactersLength = characters.length;
+  for (let i = 0; i < n; i += 1) {
+    result += characters.charAt(Math.floor(Math.random() * charactersLength));
   }
-
-  if (expectedAnswer === Number(givenAnswer)) {
-    console.log('Correct!');
-    scoreCount += 1;
-  } else {
-    console.log(`Oops, ${givenAnswer} is the wrong answer :( The correct one is ${expectedAnswer}.\nLet's try again!`);
-  }
-  return scoreCount;
+  return result;
 };
 
-export const calculatorGame = () => {
-  calcRound(generateRandomNumber(0, 100), '+', generateRandomNumber(0, 100));
-  calcRound(generateRandomNumber(0, 100), '-', generateRandomNumber(0, 100));
-  calcRound(generateRandomNumber(0, 100), '*', generateRandomNumber(0, 100));
-
-  if (scoreCount === 3) {
-    console.log('\nCongratulations!');
+const makeCalcPair = () => {
+  const num1 = generateRandomNumber(0, 100);
+  const num2 = generateRandomNumber(0, 100);
+  const operator = getOperator(1);
+  const q = `${num1} ${operator} ${num2}`;
+  let a;
+  switch (operator) {
+    case '+':
+      a = String(num1 + num2);
+      break;
+    case '-':
+      a = String(num1 - num2);
+      break;
+    default:
+      a = String(num1 * num2);
+      break;
   }
+  return makePair(q, a);
+};
+
+export default () => {
+  engine(gameDescriptionCalc, makeCalcPair);
 };

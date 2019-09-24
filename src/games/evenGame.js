@@ -6,11 +6,10 @@ const gameDescriptionEven = 'Answer "yes" if the number is even, otherwise answe
 
 const isEven = (num) => num % 2 === 0;
 
-const makeEvenPair = (x = generateRandomNumber(0, 100), y = isEven(x)) => {
-  if (y === true) {
-    return makePair(x, 'yes');
-  }
-  return makePair(x, 'no');
+const makeEvenPair = () => {
+  const q = generateRandomNumber(0, 100);
+  const a = isEven(q);
+  return a ? makePair(q, 'yes') : makePair(q, 'no');
 };
 
 export default () => {
