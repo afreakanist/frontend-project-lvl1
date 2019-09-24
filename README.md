@@ -25,6 +25,7 @@ Here are some videos illustrating how to install the package and run the games:
 
 
 You shall see the following files and directories:
+    
     ...                 ...
     README.md			this file
 
