@@ -11,25 +11,21 @@ This is my first project ever. It's a pack of little math games I encourage you 
 
 Here are some videos illustrating how to install the package and run the games:
 
-[![asciicast](https://asciinema.org/a/BkIoiIutMaHcCVx3lnByKmf00.svg)](https://asciinema.org/a/BkIoiIutMaHcCVx3lnByKmf00)
+[![asciicast](https://asciinema.org/a/mootsSp4vlvgsa7iCpZ8RJCgz.svg)](https://asciinema.org/a/mootsSp4vlvgsa7iCpZ8RJCgz)
 
-[![asciicast](https://asciinema.org/a/RwyhHxWTWI0AT2EwNqoPOE0GW.svg)](https://asciinema.org/a/RwyhHxWTWI0AT2EwNqoPOE0GW)
+[![asciicast](https://asciinema.org/a/rXRzZ1rzso2H3h3BCAh4hETsB.svg)](https://asciinema.org/a/rXRzZ1rzso2H3h3BCAh4hETsB)
 
-[![asciicast](https://asciinema.org/a/zhp9ML88CE5ET5HKKYimv6yz2.svg)](https://asciinema.org/a/zhp9ML88CE5ET5HKKYimv6yz2)
+[![asciicast](https://asciinema.org/a/vT5qnERYQy1Db1M6R0addDePx.svg)](https://asciinema.org/a/vT5qnERYQy1Db1M6R0addDePx)
 
-[![asciicast](https://asciinema.org/a/XNNrRVZ2bj2CU8bYOdh9X9Imj.svg)](https://asciinema.org/a/XNNrRVZ2bj2CU8bYOdh9X9Imj)
+[![asciicast](https://asciinema.org/a/USBKnNlEaJsPwKGI3dmbAy8dZ.svg)](https://asciinema.org/a/USBKnNlEaJsPwKGI3dmbAy8dZ)
 
-[![asciicast](https://asciinema.org/a/UEYSSmwQzxrEBJgdWJNrzr7bg.svg)](https://asciinema.org/a/UEYSSmwQzxrEBJgdWJNrzr7bg)
+[![asciicast](https://asciinema.org/a/y4sPoVp8bO3B7H8MvdHRq3Cnt.svg)](https://asciinema.org/a/y4sPoVp8bO3B7H8MvdHRq3Cnt)
+
+[![asciicast](https://asciinema.org/a/LUJG9tffSoaBGGCwaBU0BpQ7j.svg)](https://asciinema.org/a/LUJG9tffSoaBGGCwaBU0BpQ7j)
+
 
 You shall see the following files and directories:
-
-    dist/
-    node_modules/
-    src/
-    babel.config.js
-    Makefile
-    package.json
-    package-lock.json
+    ...                 ...
     README.md			this file
 
 ## Additional information
