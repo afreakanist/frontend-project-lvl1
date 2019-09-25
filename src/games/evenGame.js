@@ -8,15 +8,7 @@ const isEven = (num) => num % 2 === 0;
 
 const makeEvenPair = () => {
   const question = generateRandomNumber(0, 100);
-  let answer;
-  switch (isEven(question)) {
-    case true:
-      answer = 'yes';
-      break;
-    default:
-      answer = 'no';
-      break;
-  }
+  const answer = isEven(question) ? 'yes' : 'no';
   return makePair(question, answer);
 };
 

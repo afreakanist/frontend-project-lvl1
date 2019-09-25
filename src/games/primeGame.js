@@ -15,15 +15,7 @@ const isPrime = (num) => {
 
 const makePrimePair = () => {
   const question = generateRandomNumber(0, 100);
-  let answer;
-  switch (isPrime(question)) {
-    case true:
-      answer = 'yes';
-      break;
-    default:
-      answer = 'no';
-      break;
-  }
+  const answer = isPrime(question) ? 'yes' : 'no';
   return makePair(question, answer);
 };
 
