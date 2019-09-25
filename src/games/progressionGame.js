@@ -26,9 +26,9 @@ const makeProgPair = () => {
   const hiddenNumber = splitSequence()[hiddenNumberPosition];
   const sequenceModified = sequence.replace(splitSequence()[hiddenNumberPosition], '..');
 
-  const q = `${sequenceModified}`;
-  const a = hiddenNumber;
-  return makePair(q, a);
+  const question = `${sequenceModified}`;
+  const answer = hiddenNumber;
+  return makePair(question, answer);
 };
 
 export default () => {

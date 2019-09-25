@@ -7,9 +7,17 @@ const gameDescriptionEven = 'Answer "yes" if the number is even, otherwise answe
 const isEven = (num) => num % 2 === 0;
 
 const makeEvenPair = () => {
-  const q = generateRandomNumber(0, 100);
-  const a = isEven(q);
-  return a ? makePair(q, 'yes') : makePair(q, 'no');
+  const question = generateRandomNumber(0, 100);
+  let answer;
+  switch (isEven(question)) {
+    case true:
+      answer = 'yes';
+      break;
+    default:
+      answer = 'no';
+      break;
+  }
+  return makePair(question, answer);
 };
 
 export default () => {

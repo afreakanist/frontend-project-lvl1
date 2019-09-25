@@ -14,9 +14,9 @@ const getGcd = (a, b) => {
 const makeGcdPair = () => {
   const num1 = generateRandomNumber(0, 100);
   const num2 = generateRandomNumber(0, 100);
-  const q = `${num1} and ${num2}`;
-  const a = String(getGcd(num1, num2));
-  return makePair(q, a);
+  const question = `${num1} and ${num2}`;
+  const answer = String(getGcd(num1, num2));
+  return makePair(question, answer);
 };
 
 export default () => {

@@ -18,20 +18,20 @@ const makeCalcPair = () => {
   const num1 = generateRandomNumber(0, 100);
   const num2 = generateRandomNumber(0, 100);
   const operator = getOperator(1);
-  const q = `${num1} ${operator} ${num2}`;
-  let a;
+  const question = `${num1} ${operator} ${num2}`;
+  let answer;
   switch (operator) {
     case '+':
-      a = String(num1 + num2);
+      answer = String(num1 + num2);
       break;
     case '-':
-      a = String(num1 - num2);
+      answer = String(num1 - num2);
       break;
     default:
-      a = String(num1 * num2);
+      answer = String(num1 * num2);
       break;
   }
-  return makePair(q, a);
+  return makePair(question, answer);
 };
 
 export default () => {
