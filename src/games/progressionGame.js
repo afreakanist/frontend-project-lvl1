@@ -2,7 +2,7 @@ import generateRandomNumber from '../generateRandomNumber';
 import makePair from '../pairs';
 import engine from '..';
 
-export const gameDescriptionGcd = 'What number is missing in the sequence?';
+const gameDescription = 'What number is missing in the sequence?';
 
 const generateSequence = () => {
   let sequence = '';
@@ -18,19 +18,17 @@ const generateSequence = () => {
   return sequence;
 };
 
-const makeProgPair = () => {
+const makeRoundData = () => {
   const sequence = generateSequence();
   const numberOfTerms = 10;
   const splitSequence = () => sequence.split(' ', numberOfTerms);
   const hiddenNumberPosition = generateRandomNumber(0, splitSequence().length - 1);
-  const hiddenNumber = splitSequence()[hiddenNumberPosition];
-  const sequenceModified = sequence.replace(splitSequence()[hiddenNumberPosition], '..');
+  const answer = splitSequence()[hiddenNumberPosition];
+  const question = sequence.replace(splitSequence()[hiddenNumberPosition], '..');
 
-  const question = `${sequenceModified}`;
-  const answer = hiddenNumber;
   return makePair(question, answer);
 };
 
 export default () => {
-  engine(gameDescriptionGcd, makeProgPair);
+  engine(gameDescription, makeRoundData);
 };

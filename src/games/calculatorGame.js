@@ -2,19 +2,19 @@ import generateRandomNumber from '../generateRandomNumber';
 import makePair from '../pairs';
 import engine from '..';
 
-const gameDescriptionCalc = 'What is the result of the expression?';
+const gameDescription = 'What is the result of the expression?';
 
 const getOperator = (n) => {
   let result = '';
-  const characters = '+-*';
-  const charactersLength = characters.length;
+  const operators = '+-*';
+  const operatorsLength = operators.length;
   for (let i = 0; i < n; i += 1) {
-    result += characters.charAt(Math.floor(Math.random() * charactersLength));
+    result += operators.charAt(Math.floor(Math.random() * operatorsLength));
   }
   return result;
 };
 
-const makeCalcPair = () => {
+const makeRoundData = () => {
   const num1 = generateRandomNumber(0, 100);
   const num2 = generateRandomNumber(0, 100);
   const operator = getOperator(1);
@@ -27,13 +27,16 @@ const makeCalcPair = () => {
     case '-':
       answer = String(num1 - num2);
       break;
-    default:
+    case '*':
       answer = String(num1 * num2);
+      break;
+    default:
+      answer = null;
       break;
   }
   return makePair(question, answer);
 };
 
 export default () => {
-  engine(gameDescriptionCalc, makeCalcPair);
+  engine(gameDescription, makeRoundData);
 };

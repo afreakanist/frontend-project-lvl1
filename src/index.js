@@ -1,5 +1,5 @@
 import readlineSync from 'readline-sync';
-import { car, cdr } from './pairs';
+import { car, cdr } from '@hexlet/pairs';
 
 const greeting = 'Welcome to the Brain Games!';
 export default (gameDescription, pair) => {
@@ -15,15 +15,16 @@ export default (gameDescription, pair) => {
       console.log('Correct!');
       scoreCount += 1;
     } else {
-      console.log(`Oops, "${givenAnswer}" is the wrong answer :( The correct one is "${correctAnswer}".\nLet's try again, ${userName}!`);
+      console.log(`Oops, "${givenAnswer}" is the wrong answer :( The correct one is "${correctAnswer}".`);
+      console.log(`Let's try again, ${userName}!`);
     }
     return scoreCount;
   };
 
   const roundAmount = 3;
   for (let i = 1; i <= roundAmount; i += 1) {
-    const qa = pair();
-    playRound(car(qa), cdr(qa));
+    const questionAndAnswer = pair();
+    playRound(car(questionAndAnswer), cdr(questionAndAnswer));
   }
 
   if (scoreCount === roundAmount) {

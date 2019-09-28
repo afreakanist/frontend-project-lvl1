@@ -2,7 +2,7 @@ import generateRandomNumber from '../generateRandomNumber';
 import makePair from '../pairs';
 import engine from '..';
 
-const gameDescriptionGcd = 'Find the greatest common divisor of the given numbers.';
+const gameDescription = 'Find the greatest common divisor of the given numbers.';
 
 const getGcd = (a, b) => {
   if (!b) {
@@ -11,7 +11,7 @@ const getGcd = (a, b) => {
   return getGcd(b, a % b);
 };
 
-const makeGcdPair = () => {
+const makeRoundData = () => {
   const num1 = generateRandomNumber(0, 100);
   const num2 = generateRandomNumber(0, 100);
   const question = `${num1} and ${num2}`;
@@ -20,5 +20,5 @@ const makeGcdPair = () => {
 };
 
 export default () => {
-  engine(gameDescriptionGcd, makeGcdPair);
+  engine(gameDescription, makeRoundData);
 };
