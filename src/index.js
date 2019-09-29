@@ -10,12 +10,12 @@ export default (gameDescription, pair) => {
   let scoreCount = 0;
   const playRound = (question, correctAnswer) => {
     console.log(`\nQuestion: ${question}`);
-    const givenAnswer = readlineSync.question('Your answer: ');
-    if (correctAnswer === givenAnswer) {
+    const userAnswer = readlineSync.question('Your answer: ');
+    if (correctAnswer === userAnswer) {
       console.log('Correct!');
       scoreCount += 1;
     } else {
-      console.log(`Oops, "${givenAnswer}" is the wrong answer :( The correct one is "${correctAnswer}".`);
+      console.log(`Oops, "${userAnswer}" is the wrong answer :( The correct one is "${correctAnswer}".`);
       console.log(`Let's try again, ${userName}!`);
     }
     return scoreCount;
