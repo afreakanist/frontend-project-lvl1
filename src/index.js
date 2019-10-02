@@ -8,25 +8,20 @@ export default (gameDescription, pair) => {
   const userName = readlineSync.question('\nMay I have your name? ');
   console.log(`Hello, ${userName}!`);
   let scoreCount = 0;
-  const playRound = (question, correctAnswer) => {
-    console.log(`\nQuestion: ${question}`);
-    const userAnswer = readlineSync.question('Your answer: ');
-    if (correctAnswer === userAnswer) {
-      console.log('Correct!');
-      scoreCount += 1;
-    } else {
-      console.log(`Oops, "${userAnswer}" is the wrong answer :( The correct one is "${correctAnswer}".`);
-      console.log(`Let's try again, ${userName}!`);
-    }
-    return scoreCount;
-  };
-
   const roundAmount = 3;
   for (let i = 1; i <= roundAmount; i += 1) {
     const questionAndAnswer = pair();
-    playRound(car(questionAndAnswer), cdr(questionAndAnswer));
+    console.log(`\nQuestion: ${car(questionAndAnswer)}`);
+    const userAnswer = readlineSync.question('Your answer: ');
+    if (cdr(questionAndAnswer) === userAnswer) {
+      console.log('Correct!');
+      scoreCount += 1;
+    } else {
+      console.log(`Oops, "${userAnswer}" is the wrong answer :( The correct one is "${cdr(questionAndAnswer)}".`);
+      console.log(`Let's try again, ${userName}!`);
+    }
+    return scoreCount;
   }
-
   if (scoreCount === roundAmount) {
     console.log(`\nCongratulations, ${userName}!`);
   }
