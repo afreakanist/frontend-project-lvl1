@@ -20,7 +20,6 @@ export default (gameDescription, pair) => {
       console.log(`Oops, "${userAnswer}" is the wrong answer :( The correct one is "${cdr(questionAndAnswer)}".`);
       console.log(`Let's try again, ${userName}!`);
     }
-    return scoreCount;
   }
   if (scoreCount === roundAmount) {
     console.log(`\nCongratulations, ${userName}!`);
