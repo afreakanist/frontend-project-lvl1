@@ -1,7 +1,7 @@
-# My fisrt frontend project (lvl 1)
+# My first frontend project (lvl 1)
 
 Hello, stranger!
-This is my first project ever. It's a pack of little math games I encourage you to play!
+This is my first project ever. It's a set of little math games I encourage you to play!
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/b9b0d5549f899746187a/maintainability)](https://codeclimate.com/github/afreakanist/frontend-project-lvl1/maintainability)
 
@@ -9,7 +9,7 @@ This is my first project ever. It's a pack of little math games I encourage you 
 
 ## Installation
 
-#### To install the app, input the following command:
+#### To install the package, input the following command:
 
 	npm link
 
@@ -17,13 +17,13 @@ This is my first project ever. It's a pack of little math games I encourage you 
 
 | **Command**	| **Game description** | **Expected answer** |
 |:-------------:|:--------------------:|:-------------------:|
-| brain-calc	| *doing arithmetic operations of addition / substraction / multiplication* | integer |
-| brain-even    | *determining whether the given number is even (division by two gives an integer)* | "yes"/"no" in words |
-| brain-gcd 	| *finding the greatest common divisor of the two given numbers* | integer |
-| brain-prime	| *determining whether the given number is prime (only division by 1 and the number itsels gives an integer)* | "yes"/"no" in words |
-| brain-progression | *finding the missing term of the given progression (common difference always equals 2)* | integer |
+| brain-calc	| *performing arithmetic operations of addition / substraction / multiplication* | integer |
+| brain-even    | *determining whether a number is even (division by two gives an integer) or not* | "yes"/"no" in words |
+| brain-gcd 	| *finding the greatest common divisor of two numbers* | integer |
+| brain-prime	| *determining whether a number is prime (only division by 1 and the number itsels gives an integer) or not* | "yes"/"no" in words |
+| brain-progression | *finding the missing term of a progression (common difference always equals 2)* | integer |
 
-Each game has three rounds; there is one question for each round. If you answer all three questions correctly you win! c:
+To win a game, you must answer three questions.
 
 #### Here are some videos illustrating how to install the package and run the games:
 
@@ -40,14 +40,9 @@ Each game has three rounds; there is one question for each round. If you answer 
 [![asciicast](https://asciinema.org/a/LUJG9tffSoaBGGCwaBU0BpQ7j.svg)](https://asciinema.org/a/LUJG9tffSoaBGGCwaBU0BpQ7j)
 
 
-You shall see the following files and directories:
-    
-    ...                 ...
-    README.md			this file
-
 ## Additional information
 
-Please notice that this is a student project. 
-My name is Anna Korotkikh and I did this project under the supervision of the Hexlet Team. 
+Please notice that this is a practice project. 
+My name is Anna Korotkikh and I did this project under supervision of the Hexlet Team. 
 Don't hesitate to let me know if you think it needs fine-tuning!
 
