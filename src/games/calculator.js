@@ -1,14 +1,9 @@
+import { cons } from '@hexlet/pairs';
 import generateRandomNumber from '../generateRandomNumber';
-import makePair from '../pairs';
+import getOperator from '../getOperator';
 import engine from '..';
 
 const gameDescription = 'What is the result of the expression?';
-
-const getOperator = () => {
-  const operatorList = '+-*';
-  const randomIndex = generateRandomNumber(0, operatorList.length - 1);
-  return operatorList[randomIndex];
-};
 
 const makeRoundData = () => {
   const num1 = generateRandomNumber(0, 100);
@@ -30,7 +25,7 @@ const makeRoundData = () => {
       answer = null;
       break;
   }
-  return makePair(question, answer);
+  return cons(question, answer);
 };
 
 export default () => {
