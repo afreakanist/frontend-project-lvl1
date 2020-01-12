@@ -7,7 +7,6 @@ export default (gameDescription, getPair) => {
   console.log(gameDescription);
   const userName = readlineSync.question('\nMay I have your name? ');
   console.log(`Hello, ${userName}!`);
-  let scoreCount = 0;
   const roundCount = 3;
   for (let i = 1; i <= roundCount; i += 1) {
     const questionAndAnswer = getPair();
@@ -17,14 +16,12 @@ export default (gameDescription, getPair) => {
     const userAnswer = readlineSync.question('Your answer: ');
     if (correctAnswer === userAnswer) {
       console.log('Correct!');
-      scoreCount += 1;
     } else {
       console.log(`Oops, "${userAnswer}" is the wrong answer :( The correct one is "${correctAnswer}".`);
       console.log(`Let's try again, ${userName}!`);
+      return;
     }
   }
 
-  if (scoreCount === roundCount) {
-    console.log(`\nCongratulations, ${userName}!`);
-  }
+  console.log(`\nCongratulations, ${userName}!`);
 };
