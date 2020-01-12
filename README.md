@@ -27,17 +27,17 @@ To win a game, you must answer three questions.
 
 #### Here are some videos illustrating how to install the package and run the games:
 
-[![asciicast](https://asciinema.org/a/mootsSp4vlvgsa7iCpZ8RJCgz.svg)](https://asciinema.org/a/mootsSp4vlvgsa7iCpZ8RJCgz)
+[![asciicast](https://asciinema.org/a/hKcX7DB1f2Rfbz49tzf8L6SfT.svg)](https://asciinema.org/a/hKcX7DB1f2Rfbz49tzf8L6SfT)
 
-[![asciicast](https://asciinema.org/a/rXRzZ1rzso2H3h3BCAh4hETsB.svg)](https://asciinema.org/a/rXRzZ1rzso2H3h3BCAh4hETsB)
+[![asciicast](https://asciinema.org/a/wzDLWZ2cJDiCYdCVwugqYng5N.svg)](https://asciinema.org/a/wzDLWZ2cJDiCYdCVwugqYng5N)
 
-[![asciicast](https://asciinema.org/a/vT5qnERYQy1Db1M6R0addDePx.svg)](https://asciinema.org/a/vT5qnERYQy1Db1M6R0addDePx)
+[![asciicast](https://asciinema.org/a/ieOX1lwBbNzqmrLuS3hktT4OU.svg)](https://asciinema.org/a/ieOX1lwBbNzqmrLuS3hktT4OU)
 
-[![asciicast](https://asciinema.org/a/USBKnNlEaJsPwKGI3dmbAy8dZ.svg)](https://asciinema.org/a/USBKnNlEaJsPwKGI3dmbAy8dZ)
+[![asciicast](https://asciinema.org/a/mM3G0AxAF98G5YxQNUaUswJXD.svg)](https://asciinema.org/a/mM3G0AxAF98G5YxQNUaUswJXD)
 
-[![asciicast](https://asciinema.org/a/y4sPoVp8bO3B7H8MvdHRq3Cnt.svg)](https://asciinema.org/a/y4sPoVp8bO3B7H8MvdHRq3Cnt)
+[![asciicast](https://asciinema.org/a/jBe0YZS7GyMp6f1X7HEKSt0jQ.svg)](https://asciinema.org/a/jBe0YZS7GyMp6f1X7HEKSt0jQ)
 
-[![asciicast](https://asciinema.org/a/LUJG9tffSoaBGGCwaBU0BpQ7j.svg)](https://asciinema.org/a/LUJG9tffSoaBGGCwaBU0BpQ7j)
+[![asciicast](https://asciinema.org/a/hfcCJbBMUofZE73wL8xqhA4so.svg)](https://asciinema.org/a/hfcCJbBMUofZE73wL8xqhA4so)
 
 
 ## Additional information
