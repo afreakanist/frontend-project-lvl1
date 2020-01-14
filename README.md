@@ -20,8 +20,8 @@ This is my first project ever. It's a set of little math games I encourage you t
 | brain-calc	| *performing arithmetic operations of addition / substraction / multiplication* | integer |
 | brain-even    | *determining whether a number is even (division by two gives an integer) or not* | "yes"/"no" in words |
 | brain-gcd 	| *finding the greatest common divisor of two numbers* | integer |
-| brain-prime	| *determining whether a number is prime (only division by 1 and the number itsels gives an integer) or not* | "yes"/"no" in words |
-| brain-progression | *finding the missing term of a progression (common difference always equals 2)* | integer |
+| brain-prime	| *determining whether a number is prime (only division by one and the number itsels gives an integer) or not* | "yes"/"no" in words |
+| brain-progression | *finding the missing term of a progression* | integer |
 
 To win a game, you must answer three questions.
 
