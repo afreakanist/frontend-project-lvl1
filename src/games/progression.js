@@ -16,10 +16,12 @@ const generateSequence = (num, difference) => {
 };
 
 const makeRoundData = () => {
-  const sequence = generateSequence(generateRandomNumber(0, 100), generateRandomNumber(0, 10));
+  const start = generateRandomNumber(0, 100);
+  const difference = generateRandomNumber(0, 10);
+  const sequence = generateSequence(start, difference);
   const splitSequence = () => sequence.split(' ', sequenceLength);
   const hiddenNumberPosition = generateRandomNumber(0, splitSequence().length - 1);
-  const answer = splitSequence()[hiddenNumberPosition];
+  const answer = String(start + difference * hiddenNumberPosition);
   const question = sequence.replace(answer, '..');
 
   return cons(question, answer);
