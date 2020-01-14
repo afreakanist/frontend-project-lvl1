@@ -40,7 +40,7 @@
     "eslint-plugin-babel": "^5.3.0",
     "eslint-plugin-import": "^2.18.2"
   },
-  "main": "babel.config.js",
+  "main": "dist/index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/afreakanist/frontend-project-lvl1.git"

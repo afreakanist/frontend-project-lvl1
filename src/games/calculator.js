@@ -4,11 +4,11 @@ import engine from '..';
 
 const gameDescription = 'What is the result of the expression?';
 
-const operatorList = '+-*';
+const operators = '+-*';
 
 const getOperator = () => {
-  const randomIndex = generateRandomNumber(0, operatorList.length - 1);
-  return operatorList[randomIndex];
+  const randomIndex = generateRandomNumber(0, operators.length - 1);
+  return operators[randomIndex];
 };
 
 const makeRoundData = () => {

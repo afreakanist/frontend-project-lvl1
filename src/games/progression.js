@@ -8,10 +8,8 @@ const sequenceLength = 10;
 
 const generateSequence = (num, difference) => {
   let sequence = '';
-  let current = num;
-  for (let i = 1; i <= sequenceLength; i += 1) {
-    sequence = `${sequence} ${current}`;
-    current += difference;
+  for (let i = 0; i < sequenceLength; i += 1) {
+    sequence = `${sequence} ${num + difference * i}`;
   }
 
   return sequence.trim();
